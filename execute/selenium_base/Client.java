@@ -11,7 +11,10 @@ public class Client {
 		chrome.navigate("www.google.com");
 		System.out.println("driver.sleep(2000)");
 		chrome.closeWebDriver("www.google.com");
-	
+
+		System.out.println("-------------------------------");
+		var pageVersion = chrome.openWebDriver("Chrome", 313);
+		System.out.println(pageVersion);
 		System.out.println("-------------------------------");
 
 		// brave automation test 1
